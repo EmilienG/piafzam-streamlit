@@ -48,7 +48,7 @@ if "uploaded_audio" in st.session_state:
         )
     }
 
-    url = st.secrets["api_url"]
+    url = "http://localhost:8000/predict"  # URL de votre API FastAPI
 
     # 4. Bouton de prédiction
     if st.button("Analyser l'audio"):
